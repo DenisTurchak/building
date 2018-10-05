@@ -1,0 +1,19 @@
+/*
+Theme Name: Building
+Theme URI: @_denis_turchak
+Author: Denis Turchak
+Author URI: @_denis_turchak
+Description:
+Version: 1.0
+*/
+
+html{
+    min-width: 1000px;
+}
+body{
+    min-width: 1000px;
+}
+.header-logo img{
+    width: 240px;
+    height: 63px;
+}
