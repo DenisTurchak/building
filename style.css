@@ -7,13 +7,130 @@ Description:
 Version: 1.0
 */
 
-html{
-    min-width: 1000px;
-}
-body{
-    min-width: 1000px;
+.header-logo{
+    /*display: inline-block;*/
+    /*float: left;*/
 }
 .header-logo img{
     width: 240px;
     height: 63px;
 }
+
+.text-end{
+    text-align: end;
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+.bl-menu ul li{
+    display: inline-block;
+    padding: 0 0.3rem;
+}
+.p-o{
+    padding: 0 !important;
+}
+.bl-menu .bg-menu-color{
+    display: inline-block;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.header-number{
+    float: right;
+}
+
+/*Стили верхнего меню*/
+#navbar-menu a, .city a{
+    color: #A30F36;
+    font-size: 1.1rem;
+}
+#navbar-menu a:hover{
+    text-decoration: underline;
+}
+/*------------------*/
+
+/*Стили номера телефона и города*/
+.header-number{
+    text-align: center;
+    padding-top: 10px;
+}
+.city{
+    border-bottom: 1px dashed #A30F36;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+.city a{
+    text-decoration: none;
+}
+.city{
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+.city:hover{
+    text-decoration: none;
+    -webkit-transform: scale(1.05) !important;
+    -ms-transform: scale(1.05) !important;
+    transform: scale(1.05) !important;
+    /*text-shadow: 1px 1px 0px #EFD2D2;*/
+    /*transition-duration: 0.5s;*/
+}
+/*------------------*/
+
+/*Стили нижнего меню шапки*/
+.main-bottom-menu{
+    background-color: #A30F36;
+}
+.main-down-menu{
+    text-align: center;
+}
+.main-down-menu a{
+    color: #ffffff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.main-down-menu ul li{
+    position: relative;
+    border-bottom: 4px solid transparent;
+    background-color: #A30F36;
+}
+.main-down-menu ul li:hover{
+    border-bottom: 4px solid #000000;
+}
+
+@media (max-width: 1258px){
+    .main-down-menu li {
+        max-width: 200px;
+    }
+}
+
+.sub-menu li{
+    width: 100%;
+    padding-left: 0;
+}
+
+@media (min-width: 1162px) {
+    li:active, li:hover .sub-menu {
+        display: block;
+        left: 0;
+    }
+}
+li ul{
+    position: absolute;
+    display: none;
+    margin-top: -5px;
+    padding-top: 13px;
+    width: 100%;
+    padding-left: 0;
+    z-index: 100;
+}
+@media (max-width: 1162px){
+    #menu-main-bottom-menu li {
+        display: block;
+    }
+}
+
+.show{
+    display: block;
+}
+/*----------------------------*/

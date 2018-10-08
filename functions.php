@@ -8,8 +8,8 @@ function fitnes_setup(){
         'height' => 63
     ));
     register_nav_menus([
-        'header-menu' => 'Шапка сайта',
-        'footer-menu' => 'Подвал сайта'
+        'header-up-menu' => 'Верхнее меню шапки',
+        'footer-down-menu' => 'Нижнее меню шапки'
     ]);
 
 }
@@ -19,10 +19,12 @@ add_action('after_setup_theme', 'fitnes_setup');
 add_action( 'wp_enqueue_scripts', 'fitnes_scripts' );
 // add_action('wp_print_styles', 'theme_name_scripts'); // можно использовать этот хук он более поздний
 function fitnes_scripts() {
-    wp_enqueue_style( 'style-css', get_stylesheet_uri() );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri(). '/css/bootstrap.css' );
-    wp_enqueue_script( 'jquery');
+//    wp_enqueue_script( 'jquery');
+    wp_enqueue_script( 'jquery-js', get_template_directory_uri() . '/js/jquery-3.3.1.js');
     wp_enqueue_script( 'bootsstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js');
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js');
+    wp_enqueue_style( 'style-css', get_stylesheet_uri() );
 }
 class description_walker extends Walker_Nav_Menu
 {
