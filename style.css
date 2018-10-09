@@ -32,8 +32,8 @@ Version: 1.0
 }
 .bl-menu .bg-menu-color{
     display: inline-block;
-    padding: 5px;
     padding-bottom: 0;
+    width: 100%;
 }
 
 .header-number{
@@ -73,13 +73,14 @@ Version: 1.0
     -ms-transform: scale(1.05) !important;
     transform: scale(1.05) !important;
     /*text-shadow: 1px 1px 0px #EFD2D2;*/
-    /*transition-duration: 0.5s;*/
 }
 /*------------------*/
 
 /*Стили нижнего меню шапки*/
 .main-bottom-menu{
     background-color: #A30F36;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .main-down-menu{
     text-align: center;
@@ -100,13 +101,14 @@ Version: 1.0
 
 @media (max-width: 1258px){
     .main-down-menu li {
-        max-width: 200px;
+        /*max-width: 200px;*/
     }
 }
 
 .sub-menu li{
     width: 100%;
     padding-left: 0;
+    margin: 2px 0;
 }
 
 @media (min-width: 1162px) {
@@ -125,12 +127,53 @@ li ul{
     z-index: 100;
 }
 @media (max-width: 1162px){
-    #menu-main-bottom-menu li {
+    #menu-main-bottom-menu > li {
         display: block;
+        box-shadow: #650a23 0 2px 4px inset;
     }
-}
+    #menu-main-bottom-menu li ul{
+        position: relative;
+    }
+    .sub-menu li{
+        background-color: #ffffff !important;
+    }
+    .sub-menu li a{
+        color: #000000;
+    }
 
+}
 .show{
     display: block;
 }
 /*----------------------------*/
+/*Слайдер*/
+.bl-slider{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.bl-slider img{
+    max-height: 478px;
+    width: 100%;
+}
+@media (max-width: 500px){
+    .bl-slider img{
+        height: 200px;
+    }
+}
+.carousel.fade{
+    opacity: 1;
+}
+.carousel.fade .carousel-item {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.carousel.fade .carousel-item.active{
+    position: relative;
+    opacity: 1;
+}
+/*--------*/

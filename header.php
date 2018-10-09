@@ -35,6 +35,9 @@
                         <span class="city">
                             <img src="/img/nav.png"  style="width: 16px; height: 16px;">
                             <a class="scale" href="#">Мариинск</a>
+                            <div>
+                                <?php echo get_theme_mod('number-header_code')?>
+                            </div>
                         </span>
                     </div>
                 </div>
@@ -61,7 +64,23 @@
 <!--    </nav>-->
 </div>
 <!----------------->
+<!--Слайдер-->
+<div class="container-fluid bl-slider">
+    <div id="carouselSlides" class="carousel fade" data-ride="carousel" data-interval="3500" data-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="<?php echo get_theme_mod('slider_img_1')?>">
+            </div>
+            <div class="carousel-item">
+                <img src="<?php echo get_theme_mod('slider_img_2')?>">
+            </div>
+            <div class="carousel-item">
+                <img src="<?php echo get_theme_mod('slider_img_3')?>">
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------->
 
 <?php //echo get_theme_mod('text-logo-header_code')?>
-<?php //echo get_theme_mod('number-header_code')?>
 <?php //echo get_theme_mod('adress-header_code')?>

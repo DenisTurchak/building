@@ -70,7 +70,7 @@ class description_walker extends Walker_Nav_Menu
     }
 }
 
-//Номер телефона
+
 function ale_customize_register($wp_customize){
 
     $wp_customize->add_section('number-header', array(
@@ -111,7 +111,50 @@ function ale_customize_register($wp_customize){
         'settings' => 'adress-header_code',
         'type' => 'textarea'
     )));
+    //----------------------------------------
+    // Слайдер - Фоновое изображение 1
+    $wp_customize->add_setting('slider_img_1',array(
+            'default'      => '', // по умолчанию - фоновое изображение не установлено
+            'transport'    => "refresh"
+        )
+    );
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_img_1', array(
+                'label'    => 'Фото слайдера 1',
+                'section'  => 'number-header',
+                'settings' => 'slider_img_1'
+            )
+        )
+    );
+    //-------------------------------------------------------------
+    // Слайдер - Фоновое изображение 2
+    $wp_customize->add_setting('slider_img_2',array(
+            'default'      => '', // по умолчанию - фоновое изображение не установлено
+            'transport'    => "refresh"
+        )
+    );
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_img_2', array(
+                'label'    => 'Фото слайдера 2',
+                'section'  => 'number-header',
+                'settings' => 'slider_img_2'
+            )
+        )
+    );
+    //-------------------------------------------------------------
+    // Слайдер - Фоновое изображение 3
+    $wp_customize->add_setting('slider_img_3',array(
+            'default'      => '', // по умолчанию - фоновое изображение не установлено
+            'transport'    => "refresh"
+        )
+    );
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_img_3', array(
+                'label'    => 'Фото слайдера 3',
+                'section'  => 'number-header',
+                'settings' => 'slider_img_3'
+            )
+        )
+    );
     //-------------------------------------------------------------
 }
+add_action('customize_register', 'ale_customize_register');
 
 

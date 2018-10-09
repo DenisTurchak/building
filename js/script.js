@@ -22,12 +22,21 @@ function WindowsSize(){
 $(document).ready(function () {
     WindowsSize();
     $(window).resize(WindowsSize);
-
+    //При клике добавляем класс, чтобы отобразить подменю
     $('.nav-item').click(function () {
-        $(this).children('ul').addClass('show');
-    });
+        if ($(this).children('ul').hasClass('show') == true){
+            $(this).children('ul').removeClass('show')
+        }
+        else {
+            $(this).children('ul').addClass('show');
+        }
 
-    //Убираем линк у роди   теля дочернего списка
+    });
+    //---------------
+    //При повторном клике убираем класс, чтобы скрыть подменю
+
+    //----------------
+    //Убираем линк у родителя дочернего списка
     if ($(window).width() <= '1162'){
         $('.sub-menu').parent().click(function () {
             event.preventDefault();
