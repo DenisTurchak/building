@@ -4,7 +4,7 @@ function fitnes_setup(){
     add_theme_support('title-tag');
     //Вывод logo
     add_theme_support('custom-logo', array(
-        'width' => 240,
+        'width' => 190,
         'height' => 63
     ));
     register_nav_menus([
@@ -20,9 +20,12 @@ add_action( 'wp_enqueue_scripts', 'fitnes_scripts' );
 // add_action('wp_print_styles', 'theme_name_scripts'); // можно использовать этот хук он более поздний
 function fitnes_scripts() {
     wp_enqueue_style( 'bootstrap', get_template_directory_uri(). '/css/bootstrap.css' );
+    wp_enqueue_style( 'slick', get_template_directory_uri(). '/css/slick.css');
+    wp_enqueue_style( 'slick-theme', get_template_directory_uri(). '/css/slick-theme.css');
 //    wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'jquery-js', get_template_directory_uri() . '/js/jquery-3.3.1.js');
     wp_enqueue_script( 'bootsstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js');
+    wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js');
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js');
     wp_enqueue_style( 'style-css', get_stylesheet_uri() );
 }

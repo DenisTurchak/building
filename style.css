@@ -12,7 +12,7 @@ Version: 1.0
     /*float: left;*/
 }
 .header-logo img{
-    width: 240px;
+    width: 190px;
     height: 63px;
 }
 
@@ -42,7 +42,7 @@ Version: 1.0
 
 /*Стили верхнего меню*/
 #navbar-menu a, .city a{
-    color: #A30F36;
+    color: #02256c;
     font-size: 1.1rem;
 }
 #navbar-menu a:hover{
@@ -56,12 +56,15 @@ Version: 1.0
     padding-top: 10px;
 }
 .city{
-    border-bottom: 1px dashed #A30F36;
+    border-bottom: 1px dashed #02256c;
     line-height: 1.5rem;
     font-size: 1.1rem;
 }
 .city a{
     text-decoration: none;
+}
+.city div{
+    font-size: 16px;
 }
 .city{
     display: inline-block;
@@ -78,7 +81,7 @@ Version: 1.0
 
 /*Стили нижнего меню шапки*/
 .main-bottom-menu{
-    background-color: #A30F36;
+    background-color: #02256c;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -93,7 +96,7 @@ Version: 1.0
 .main-down-menu ul li{
     position: relative;
     border-bottom: 4px solid transparent;
-    background-color: #A30F36;
+    background-color: #02256c;
 }
 .main-down-menu ul li:hover{
     border-bottom: 4px solid #000000;
@@ -129,7 +132,7 @@ li ul{
 @media (max-width: 1162px){
     #menu-main-bottom-menu > li {
         display: block;
-        box-shadow: #650a23 0 2px 4px inset;
+        box-shadow: #0570a9 0 2px 4px inset;
     }
     #menu-main-bottom-menu li ul{
         position: relative;
@@ -157,13 +160,13 @@ li ul{
 }
 @media (max-width: 500px){
     .bl-slider img{
-        height: 200px;
+        height: 180px;
     }
 }
-.carousel.fade{
+#carouselSlides.fade{
     opacity: 1;
 }
-.carousel.fade .carousel-item {
+#carouselSlides.fade .carousel-item {
     display: block;
     position: absolute;
     left: 0;
@@ -172,8 +175,70 @@ li ul{
     opacity: 0;
     transition: opacity 1s;
 }
-.carousel.fade .carousel-item.active{
+#carouselSlides.fade .carousel-item.active{
     position: relative;
     opacity: 1;
 }
 /*--------*/
+
+/*Слайдер видов работ*/
+.slick-slide img{
+    float: left;
+    margin-right: 10px;
+}
+.slick-slide span{
+    vertical-align: -webkit-baseline-middle !important;
+    vertical-align: middle;
+}
+.slick-slide{
+
+}
+.slick-list{
+    padding-top: 10px;
+}
+.slick-track{
+    display: flex;
+    align-items: center;
+}
+.slick-prev{
+    background: url("img/prev.png") no-repeat;
+    top: 60%;
+    height: 30px;
+}
+.slick-prev:hover{
+    background: url("img/prev.png") no-repeat;
+}
+.slick-prev::before{
+    content: "";
+}
+.slick-next{
+    background: url("img/next.png") no-repeat;
+    top: 60%;
+    height: 30px;
+}
+.slick-next:hover{
+    background: url("img/next.png") no-repeat;
+}
+.slick-next::before{
+    content: "";
+}
+@media (max-width: 800px){
+    .slick-next{
+        display: none !important;
+    }
+    .slick-prev{
+        display: none !important;
+    }
+    .m-0{
+        width: 80%;
+        margin: 0 auto !important;
+    }
+}
+.m-0{
+    display: flex !important;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/*---------------------*/

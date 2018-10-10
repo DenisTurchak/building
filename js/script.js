@@ -7,6 +7,14 @@ function WindowsSize(){
         $('.bl-menu').addClass('p-o');
         $('.nav-item').addClass('p-o');
         $('#navbar-menu').removeClass('text-end');
+      $('.slick-sl').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          mobileFirst: true
+      });
 
     }
     else{
@@ -17,6 +25,14 @@ function WindowsSize(){
       $('#navbar-menu').addClass('text-end');
       $('#navbar-menu').removeClass('text-center p-o');
 
+      $('.slick-sl').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          mobileFirst: true
+      });
     }
 };
 $(document).ready(function () {
