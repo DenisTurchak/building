@@ -100,6 +100,77 @@
          </div>
      </div>
  </div>
-
  <!---------------------->
+ <!--Блок почему нас выбирают-->
+ <div class="container-fluid bl-about-me">
+     <div class="container">
+
+         <h1>Почему выбирают нас?</h1>
+         <div class="row">
+
+             <div class="col">
+                 <div class="why-block">
+                     <img src="img/twenty.png">
+                     <span>Более 20 лет на рынке</span>
+                 </div>
+             </div>
+
+             <div class="col">
+                 <div class="why-block">
+                     <img src="img/vysokie.png">
+                     <span>Высокие мощности производственной базы</span>
+                 </div>
+             </div>
+
+            <div class="col">
+                 <div class="why-block">
+                     <img src="img/sroki.png">
+                     <span>Жесткие сроки возведения и гарантии</span>
+                 </div>
+             </div>
+
+            <div class="col">
+                 <div class="why-block">
+                     <img src="img/indiv.png">
+                     <span>Индивидуальный подход к каждому заказу</span>
+                 </div>
+             </div>
+
+            <div class="col">
+                 <div class="why-block">
+                     <img src="img/kompl.png">
+                     <span>Полный комплекс строительных услуг</span>
+                 </div>
+             </div>
+
+            <div class="col">
+                 <div class="why-block">
+                     <img src="img/poff.png">
+                     <span>Профессионализм и опыт наших специалистов</span>
+                 </div>
+             </div>
+
+            <div class="col">
+                 <div class="why-block">
+                     <img src="img/raschet.png">
+                     <span>Расчет оптимального варианта</span>
+                 </div>
+             </div>
+
+            <div class="col">
+                 <div class="why-block">
+                     <img src="img/sobl.png">
+                     <span>Соблюдение строительных норм и стандартов</span>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+ </div>
+ <!---------------------------->
+<!--Кнопка Заказать расчет-->
+ <aside>
+     <button class="calculate_index">Заказать расчет</button>
+ </aside>
+<!-------------------------->
  <?php get_footer(); ?>
