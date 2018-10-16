@@ -25,6 +25,7 @@ function fitnes_scripts() {
 //    wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'jquery-js', get_template_directory_uri() . '/js/jquery-3.3.1.js');
     wp_enqueue_script( 'bootsstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js');
+    wp_enqueue_script( 'jquery.maskedinput-js', get_template_directory_uri() . '/js/jquery.maskedinput.min.js');
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js');
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js');
     wp_enqueue_style( 'style-css', get_stylesheet_uri() );

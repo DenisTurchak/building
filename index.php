@@ -101,11 +101,12 @@
      </div>
  </div>
  <!---------------------->
+ <hr class="hr-line">
  <!--Блок почему нас выбирают-->
  <div class="container-fluid bl-about-me">
      <div class="container">
 
-         <h1>Почему выбирают нас?</h1>
+         <h2>Почему выбирают нас?</h2>
          <div class="row">
 
              <div class="col">
@@ -168,9 +169,5 @@
      </div>
  </div>
  <!---------------------------->
-<!--Кнопка Заказать расчет-->
- <aside>
-     <button class="calculate_index">Заказать расчет</button>
- </aside>
-<!-------------------------->
+
  <?php get_footer(); ?>

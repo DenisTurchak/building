@@ -36,6 +36,30 @@ function WindowsSize(){
     }
 };
 $(document).ready(function () {
+    //Маска номера телефона
+    $('#phone').mask('+7(999) 999-9999');
+    //--------------------------
+
+    //отправка формы
+    $( ".index-form" ).on( "submit", function( event ) {
+        event.preventDefault();
+        var msg   = $('.index-form').serialize();
+        $.ajax({
+            type: 'POST',
+            url: 'send.php',
+            data: msg,
+            success: function (data) {
+                $('#submit').addClass('disabled');
+                $('.result').html(data);
+
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        })
+    });
+    //----------------------------
+
     WindowsSize();
     $(window).resize(WindowsSize);
     //При клике добавляем класс, чтобы отобразить подменю

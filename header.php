@@ -8,6 +8,49 @@
 
 </head>
 <body>
+<!--Кнопка Заказать расчет-->
+<aside>
+    <button class="calculate_index" data-toggle="modal" data-target="#modalForm">Заказать расчет</button>
+</aside>
+<!-------------------------->
+<!--Модальное окно-->
+<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Заявка на расчет проекта</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="index-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="user_name" placeholder="Представьтесь, пожалуйста" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="phone" type="tel" class="form-control" name="user_phone" placeholder="Ваш телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="user_project" placeholder="Опишите Ваш проект" required>
+                    </div>
+
+                    <input id="submit" type="submit" class="btn btn-primary" value="Отправить заявку">
+                </form>
+                <div class="result"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="chekbox_container">
+                    <label for="check_box">
+                        <input id="check_box" type="checkbox" name="user_checkbox" value="Отправить заявку" required aria-required="true" checked>
+                        Нажимая кнопку «Отправить заявку», я даю согласие на обработку моих персональных данных, с <a href="#">условиями политики ознакомлен</a>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------->
 <!--Верхнее меню шапки-->
 <div class="container-fluid">
         <div class="container">
