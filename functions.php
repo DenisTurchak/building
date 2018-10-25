@@ -15,6 +15,7 @@ function fitnes_setup(){
 }
 add_action('after_setup_theme', 'fitnes_setup');
 
+
 // правильный способ подключить стили и скрипты
 add_action( 'wp_enqueue_scripts', 'fitnes_scripts' );
 // add_action('wp_print_styles', 'theme_name_scripts'); // можно использовать этот хук он более поздний

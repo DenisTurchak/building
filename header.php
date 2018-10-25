@@ -52,7 +52,7 @@
 </div>
 <!-------------------------->
 <!--Верхнее меню шапки-->
-<div class="container-fluid">
+<div class="container-fluid header-menu">
         <div class="container">
             <div class="row">
                 <div class="header-logo col">
@@ -76,7 +76,7 @@
                 <div class="header-number col">
                     <div>
                         <span class="city">
-                            <img src="/img/nav.png"  style="width: 16px; height: 16px;">
+                            <img src="/img/nav1.png"  style="width: 16px; height: 16px;">
                             <a class="scale" href="#">Мариинск</a>
                             <div>
                                 <?php echo get_theme_mod('number-header_code')?>

@@ -6,19 +6,23 @@ Author URI: @_denis_turchak
 Description:
 Version: 1.0
 */
-
+html{
+    height: 100%;
+}
 body{
-    padding-bottom: 50px;
+    height: inherit;
+    padding-top: 10px;
 }
 .header-logo{
-    /*display: inline-block;*/
-    /*float: left;*/
+    text-align: center;
 }
 .header-logo img{
     width: 190px;
     height: 63px;
 }
-
+.header-menu{
+    padding-bottom: 10px;
+}
 .text-end{
     text-align: end;
 }
@@ -45,7 +49,7 @@ body{
 
 /*Стили верхнего меню*/
 #navbar-menu a, .city a{
-    color: #02256c;
+    color: #fe4519;
     font-size: 1.1rem;
 }
 #navbar-menu a:hover{
@@ -62,7 +66,7 @@ body{
     min-width: 150px;
 }
 .city{
-    border-bottom: 1px dashed #02256c;
+    border-bottom: 1px dashed #fe4519;
     line-height: 1.5rem;
     font-size: 1.1rem;
 }
@@ -87,25 +91,27 @@ body{
 
 /*Стили нижнего меню шапки*/
 .main-bottom-menu{
-    background-color: #02256c;
+    /*background-color: #02256c;*/
+    background-color: #fe4519;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    font-size: 0.9rem;
 }
 .main-down-menu{
     text-align: center;
 }
 .main-down-menu a{
     color: #ffffff;
-    font-weight: bolder;
     text-transform: uppercase;
 }
 .main-down-menu ul li{
     position: relative;
     border-bottom: 4px solid transparent;
-    background-color: #02256c;
+    /*background-color: #02256c;*/
+    background-color: #fe4519;
 }
 .main-down-menu ul li:hover{
-    border-bottom: 4px solid #000000;
+    border-bottom: 4px solid #f9a692;
 }
 
 @media (max-width: 1258px){
@@ -138,7 +144,7 @@ li ul{
 @media (max-width: 1162px){
     #menu-main-bottom-menu > li {
         display: block;
-        box-shadow: #0570a9 0 2px 4px inset;
+        box-shadow: #f9a692 0 2px 4px inset;
     }
     #menu-main-bottom-menu li ul{
         position: relative;
@@ -262,8 +268,9 @@ li ul{
 /*Блок почему выбирают нас*/
 .bl-about-me{
     padding-top: 20px;
+    padding-bottom: 20px;
 }
-.bl-about-me h2{
+.h2{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px ;
@@ -291,7 +298,7 @@ li ul{
 
 /*Калькулятор на главной*/
  .calculate_index{
-     background-color: #260bbd;
+     background-color: #fe45198c;
      position: fixed;
      color: white;
      top: 40%;
@@ -307,14 +314,14 @@ li ul{
 
  }
  .calculate_index:hover{
-     transition: all 0.5s ease-in-out;
-     -webkit-transition: all 0.5s ease-in-out;
-     -moz-transition: all 0.5s ease-in-out;
-     -o-transition: all 0.5s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
      animation-duration: 1s;
      animation-name: example;
      animation-iteration-count: 1;
-     right: -4.5rem;
+     right: -4.6rem;
  }
 /*-----------------------*/
 
@@ -362,3 +369,91 @@ li ul{
     padding-top: 10px;
 }
 /*--------------------------*/
+
+/*блок наша деятельность*/
+.bl-our_activities{
+    background-color: #fe4519;
+    padding-top: 1rem;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.number{
+    font-weight: bold;
+    font-size: 4rem !important;
+}
+
+.bl-our_activities .text-center p{
+    font-size: 1.3rem;
+    line-height: 1;
+}
+.bl-our_activities .text-justify{
+    padding-top: 1rem;
+}
+.bl-our_activities .row{
+    margin-bottom: 2rem;
+    padding: 0 15px;
+}
+.bl-our_activities .row .text-center{
+    padding-bottom: 20px;
+}
+.ul-none_style{
+    /*list-style: none;*/
+    padding-left: 20px;
+}
+.ul-none_style li{
+    padding: 3px 0;
+    line-height: 1;
+}
+#btn-collapsed.collapsed:before{
+    content: "Показать весь текст";
+}
+#btn-collapsed:before {
+    content: "Свернуть";
+}
+
+.btn_clear{
+    background: none;
+    border: 1px solid #ffff;
+    color: #ffff;
+}
+.btn_clear:focus{
+    box-shadow: none;
+}
+.font_size{
+    font-size: 1.2rem;
+}
+/*-----------------------*/
+
+/*Footer*/
+.footer-menu{
+    text-align: center;
+}
+.footer-menu li a{
+    color: #a097a4 !important;
+}
+/*-------------------*/
+
+/*page-about*/
+.header_text_about{
+    font-size: 2rem;
+    max-width: 455px;
+    float: right;
+}
+.header_text_about div{
+    text-align: right;
+}
+
+.header_text_about .up_text{
+    text-align: left;
+    position: relative;
+    left: -15%;
+}
+.textwidget p{
+    text-align: justify !important;
+}
+.so-panel p, h3{
+    padding: 0 15px;
+}
+
+/*------------------------*/
